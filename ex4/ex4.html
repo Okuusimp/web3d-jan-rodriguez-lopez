@@ -79,44 +79,11 @@
         position="80 0 -6" 
         scale="0.5 0.6 0.5">
       </a-entity>
-<a-entity 
-        gltf-model="#HD2" 
-        position="50 70 -6" 
-        scale="0.5 0.6 0.5"
-        rotation="0 90 0">
-      </a-entity>
-      <a-box 
-        position="-14 20 0" 
-        rotation="0 0 0" 
-        src="#figura5" 
-        depth="10" 
-        height="10" 
-        width="10">
-      </a-box>
+
 
     </a-scene>
 
     <script>
-      let unobjecte = document.querySelector("#esmou");
 
-      unobjecte.addEventListener("click", () => {
-
-        unobjecte.setAttribute("animation__move", {
-          property: "position",
-          to: "10 40 -6",
-          dur: 10000,
-          easing: "easeInOutSine"
-        });
-
-        unobjecte.setAttribute("animation__rot", {
-          property: "rotation",
-          to: "0 360 0",
-          loop: true,
-          dur: 2000,
-          easing: "linear"
-        });
-
-      });
-    </script>
   </body>
 </html>
